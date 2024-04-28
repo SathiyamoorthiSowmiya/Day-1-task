@@ -1,0 +1,69 @@
+Write a blog about objects and its internal representation in Javascript:
+
+* Objects are important data types in javascript. 
+* Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). 
+* Primitive data types contain one value but Objects can hold many values in form of Key: value pair. 
+* These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+* Every object has some property associated with some value.
+* These values can be accessed using these properties associated with them.
+
+var myCar = new Object();
+
+myCar.make = 'Suzuki';
+
+myCar.model = 'Altros';
+
+myCar.year = 1978;
+
+myCar.wheels = 2;
+
+* The syntax for adding a property to an object is :
+
+ObjectName.ObjectProperty = propertyValue;
+
+* The syntax for deleting a property from an object is:
+
+delete ObjectName.ObjectProperty;
+
+* The syntax to access a property from an object is:
+
+1.objectName.property        
+           
+2.objectName["property”]     
+           
+3.objectName[expression]
+
+Object methods:
+
+* An object method is an object property containing a function definition. 
+
+ syntax:function(){return ignition.on}
+
+* Create Object Literal: 
+
+ way to create a javascript object is object literal, simply define the property and values inside curly braces as shown below.
+
+ let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+* Create Object with Constructor: 
+
+ function Vehicle(name, maker) {
+   this.name = name;
+   this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name);  
+console.log(car2.name); 
+
+* Creates a new JavaScript object with four properties:
+
+var person = new Object();
+person.firstName = “John”;
+person.lastName = “Doe”;
+person.age = 50;
+person.eyeColor = “blue”;
+
+
+
+
